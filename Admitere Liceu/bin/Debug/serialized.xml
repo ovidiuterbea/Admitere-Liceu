@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Elev xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nume>Ovidiu</Nume>
+  <Prenume>fsdfs</Prenume>
+  <Adresa>fsdfsdf</Adresa>
+  <Sex>fsdf</Sex>
+  <MediePeScGenerala>9</MediePeScGenerala>
+  <Examen>
+    <NotaMatematica>9</NotaMatematica>
+    <NotaRomana>9</NotaRomana>
+  </Examen>
+  <Licee>
+    <Liceu>
+      <NumeLiceu>Sava</NumeLiceu>
+      <MedieLiceu>9</MedieLiceu>
+      <Specializare>Arta actorului</Specializare>
+      <Profil>Artistic</Profil>
+    </Liceu>
+    <Liceu>
+      <NumeLiceu>Sava test</NumeLiceu>
+      <MedieLiceu>9</MedieLiceu>
+      <Specializare>Arta actorului</Specializare>
+      <Profil>Artistic</Profil>
+    </Liceu>
+  </Licee>
+  <ZiDeNastere>2021-04-13T19:06:49.0306645+03:00</ZiDeNastere>
+</Elev>
