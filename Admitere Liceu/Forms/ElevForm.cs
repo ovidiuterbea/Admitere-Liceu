@@ -53,12 +53,12 @@ namespace Admitere_Liceu.Forms
 
         private void tbNumeElev_KeyPress(object sender, KeyPressEventArgs e)
         {
-           
+            e.Handled = !(char.IsLetter(e.KeyChar) || (e.KeyChar == (char)Keys.Back));
         }
 
         private void tbPrenumeElev_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            e.Handled = !(char.IsLetter(e.KeyChar) || (e.KeyChar == (char)Keys.Back));
         }
 
         private void tbMedieSc_KeyPress(object sender, KeyPressEventArgs e)
@@ -97,6 +97,38 @@ namespace Admitere_Liceu.Forms
         private void tbPrenumeElev_Validated(object sender, EventArgs e)
         {
             errorProvider.SetError(tbPrenumeElev, null);
+        }
+
+        private void tbDataNasterii_Validating(object sender, CancelEventArgs e)
+        {
+            DateTime birthDate = tbDataNasterii.Value;
+            int age = DateTime.Now.Year - birthDate.Year;
+            if (birthDate >= DateTime.Today)
+            {
+                errorProvider.SetError(tbDataNasterii, "Zi de nastere invalida !");
+                e.Cancel = true;
+            }
+
+            if(age < 13)
+            {
+                errorProvider.SetError(tbDataNasterii, "Varsta prea mica pentru a intra la liceu ! ");
+                e.Cancel = true;
+            }
+        }
+
+        private void tbDataNasterii_Validated(object sender, EventArgs e)
+        {
+            errorProvider.SetError(tbDataNasterii, null);
+        }
+
+        private void tbCNP_Validating(object sender, CancelEventArgs e)
+        {
+            // 13 caractere
+        }
+
+        private void tbCNP_Validated(object sender, EventArgs e)
+        {
+
         }
     }
 }

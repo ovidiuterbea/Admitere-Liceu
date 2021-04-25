@@ -163,6 +163,8 @@ namespace Admitere_Liceu.Forms
             this.tbCNP.Size = new System.Drawing.Size(194, 28);
             this.tbCNP.TabIndex = 12;
             this.tbCNP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCNP_KeyPress);
+            this.tbCNP.Validating += new System.ComponentModel.CancelEventHandler(this.tbCNP_Validating);
+            this.tbCNP.Validated += new System.EventHandler(this.tbCNP_Validated);
             // 
             // tbDataNasterii
             // 
@@ -171,6 +173,8 @@ namespace Admitere_Liceu.Forms
             this.tbDataNasterii.Name = "tbDataNasterii";
             this.tbDataNasterii.Size = new System.Drawing.Size(319, 28);
             this.tbDataNasterii.TabIndex = 13;
+            this.tbDataNasterii.Validating += new System.ComponentModel.CancelEventHandler(this.tbDataNasterii_Validating);
+            this.tbDataNasterii.Validated += new System.EventHandler(this.tbDataNasterii_Validated);
             // 
             // label8
             // 
