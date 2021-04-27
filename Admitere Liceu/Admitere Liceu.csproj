@@ -94,6 +94,12 @@
     <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\VizualizareElevi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VizualizareElevi.Designer.cs">
+      <DependentUpon>VizualizareElevi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\EditElev.resx">
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VizualizareElevi.resx">
+      <DependentUpon>VizualizareElevi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

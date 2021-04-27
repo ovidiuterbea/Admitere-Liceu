@@ -43,6 +43,7 @@ namespace Admitere_Liceu
             this.deserializareToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnInscriere = new System.Windows.Forms.Button();
             this.label_Welcome = new System.Windows.Forms.Label();
+            this.btnVisualizeElevi = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,14 +87,14 @@ namespace Admitere_Liceu
             // serializareToolStripMenuItem
             // 
             this.serializareToolStripMenuItem.Name = "serializareToolStripMenuItem";
-            this.serializareToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.serializareToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.serializareToolStripMenuItem.Text = "Serializare";
             this.serializareToolStripMenuItem.Click += new System.EventHandler(this.serializareBinary);
             // 
             // deserializareToolStripMenuItem
             // 
             this.deserializareToolStripMenuItem.Name = "deserializareToolStripMenuItem";
-            this.deserializareToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deserializareToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.deserializareToolStripMenuItem.Text = "Deserializare";
             this.deserializareToolStripMenuItem.Click += new System.EventHandler(this.deserializareBinary);
             // 
@@ -132,21 +133,21 @@ namespace Admitere_Liceu
             // serializareToolStripMenuItem2
             // 
             this.serializareToolStripMenuItem2.Name = "serializareToolStripMenuItem2";
-            this.serializareToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.serializareToolStripMenuItem2.Size = new System.Drawing.Size(178, 26);
             this.serializareToolStripMenuItem2.Text = "Serializare";
             this.serializareToolStripMenuItem2.Click += new System.EventHandler(this.serializareJSON);
             // 
             // deserializareToolStripMenuItem2
             // 
             this.deserializareToolStripMenuItem2.Name = "deserializareToolStripMenuItem2";
-            this.deserializareToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.deserializareToolStripMenuItem2.Size = new System.Drawing.Size(178, 26);
             this.deserializareToolStripMenuItem2.Text = "Deserializare";
             this.deserializareToolStripMenuItem2.Click += new System.EventHandler(this.deserializareJSON);
             // 
             // btnInscriere
             // 
             this.btnInscriere.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnInscriere.Location = new System.Drawing.Point(53, 244);
+            this.btnInscriere.Location = new System.Drawing.Point(95, 516);
             this.btnInscriere.Name = "btnInscriere";
             this.btnInscriere.Size = new System.Drawing.Size(119, 60);
             this.btnInscriere.TabIndex = 1;
@@ -158,12 +159,23 @@ namespace Admitere_Liceu
             // 
             this.label_Welcome.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Welcome.ForeColor = System.Drawing.Color.Transparent;
-            this.label_Welcome.Location = new System.Drawing.Point(72, 75);
+            this.label_Welcome.Location = new System.Drawing.Point(88, 78);
             this.label_Welcome.Name = "label_Welcome";
             this.label_Welcome.Size = new System.Drawing.Size(379, 71);
             this.label_Welcome.TabIndex = 2;
             this.label_Welcome.Text = "Admitere liceu";
             this.label_Welcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnVisualizeElevi
+            // 
+            this.btnVisualizeElevi.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnVisualizeElevi.Location = new System.Drawing.Point(348, 516);
+            this.btnVisualizeElevi.Name = "btnVisualizeElevi";
+            this.btnVisualizeElevi.Size = new System.Drawing.Size(119, 60);
+            this.btnVisualizeElevi.TabIndex = 3;
+            this.btnVisualizeElevi.Text = "Vizualizare elevi";
+            this.btnVisualizeElevi.UseVisualStyleBackColor = true;
+            this.btnVisualizeElevi.Click += new System.EventHandler(this.btnVisualizeElevi_Click);
             // 
             // Main
             // 
@@ -171,6 +183,7 @@ namespace Admitere_Liceu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(553, 632);
+            this.Controls.Add(this.btnVisualizeElevi);
             this.Controls.Add(this.label_Welcome);
             this.Controls.Add(this.btnInscriere);
             this.Controls.Add(this.menuStrip1);
@@ -202,6 +215,7 @@ namespace Admitere_Liceu
         private System.Windows.Forms.ToolStripMenuItem deserializareToolStripMenuItem2;
         private System.Windows.Forms.Button btnInscriere;
         private System.Windows.Forms.Label label_Welcome;
+        private System.Windows.Forms.Button btnVisualizeElevi;
     }
 }
 

@@ -98,8 +98,12 @@ namespace Admitere_Liceu
                 JsonSerializer serializer = new JsonSerializer();
                 _elevi = (List<Elev>)serializer.Deserialize(file, typeof(List<Elev>));
             }
+        }
 
-
+        private void btnVisualizeElevi_Click(object sender, EventArgs e)
+        {
+            VizualizareElevi vizualizareElevi = new VizualizareElevi(_elevi);
+            vizualizareElevi.ShowDialog();
         }
     }
 }
