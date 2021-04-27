@@ -1,51 +1,24 @@
 <?xml version="1.0"?>
 <ArrayOfElev xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Elev>
-    <Nume>testUnu</Nume>
-    <Prenume>testUnu</Prenume>
+    <Nume>fdsfsdf</Nume>
+    <Prenume>fdsfsdfsdf</Prenume>
     <CNP>5000500500500</CNP>
     <Adresa>sdfsdfsd</Adresa>
-    <Sex>M</Sex>
+    <Sex>fsdfsdf</Sex>
     <MediePeScGenerala>9</MediePeScGenerala>
     <Examen>
-      <NotaMatematica>9</NotaMatematica>
-      <NotaRomana>9</NotaRomana>
+      <NotaMatematica>8</NotaMatematica>
+      <NotaRomana>8</NotaRomana>
     </Examen>
     <Licee>
       <Liceu>
-        <NumeLiceu>sava</NumeLiceu>
-        <MedieLiceu>9</MedieLiceu>
-        <Specializare>Militar</Specializare>
-        <Profil>Militar</Profil>
+        <NumeLiceu>ceva</NumeLiceu>
+        <MedieLiceu>8</MedieLiceu>
+        <Specializare>Arta actorului</Specializare>
+        <Profil>Artistic</Profil>
       </Liceu>
     </Licee>
-    <ZiDeNastere>2021-04-27T11:15:13.2389025+03:00</ZiDeNastere>
-  </Elev>
-  <Elev>
-    <Nume>testDoi</Nume>
-    <Prenume>testDoi</Prenume>
-    <CNP>5000400400400</CNP>
-    <Adresa>fdsdfsdffs</Adresa>
-    <Sex>m</Sex>
-    <MediePeScGenerala>6</MediePeScGenerala>
-    <Examen>
-      <NotaMatematica>7</NotaMatematica>
-      <NotaRomana>7</NotaRomana>
-    </Examen>
-    <Licee>
-      <Liceu>
-        <NumeLiceu>sava</NumeLiceu>
-        <MedieLiceu>9</MedieLiceu>
-        <Specializare>Militar</Specializare>
-        <Profil>Militar</Profil>
-      </Liceu>
-      <Liceu>
-        <NumeLiceu>VIANU</NumeLiceu>
-        <MedieLiceu>7</MedieLiceu>
-        <Specializare>Arhitectura</Specializare>
-        <Profil>Arte plastice si vizuale</Profil>
-      </Liceu>
-    </Licee>
-    <ZiDeNastere>2021-04-27T11:16:02.3099257+03:00</ZiDeNastere>
+    <ZiDeNastere>2021-04-27T11:25:38.5672451+03:00</ZiDeNastere>
   </Elev>
 </ArrayOfElev>

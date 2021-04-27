@@ -1,14 +1,10 @@
 ﻿using Admitere_Liceu.Clase;
 using Admitere_Liceu.Forms;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
@@ -44,14 +40,66 @@ namespace Admitere_Liceu
 
         }
 
-        private void serializareToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void serializareXML(object sender, EventArgs e)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<Elev>));
             using (FileStream stream = File.Create("serialized.xml"))
             {
                 serializer.Serialize(stream, _elevi);
-                //serializer.Serialize(stream, _examenMain);
             }
+        }
+
+        private void deserializareXML(object sender, EventArgs e)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Elev>));
+            using (FileStream stream = File.OpenRead("serialized.xml"))
+            {
+                _elevi = (List<Elev>)serializer.Deserialize(stream);
+            }
+        }
+
+        private void serializareBinary(object sender, EventArgs e)
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream stream = File.Create("serialized.bin"))
+            {
+                formatter.Serialize(stream, _elevi);
+            }
+        }
+
+        private void deserializareBinary(object sender, EventArgs e)
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream stream = File.OpenRead("serialized.bin"))
+            {
+                _elevi = (List<Elev>)formatter.Deserialize(stream);
+                
+            }
+        }
+
+        private void serializareJSON(object sender, EventArgs e)
+        {
+            JsonSerializer serializer = new JsonSerializer();
+
+            using (FileStream stream = File.Create("serialized.json"))
+            {
+                StreamWriter sw = new StreamWriter(stream);
+                JsonWriter writer = new JsonTextWriter(sw);
+                serializer.Serialize(writer, _elevi);
+                writer.Close();
+                sw.Close();
+            }
+        }
+
+        private void deserializareJSON(object sender, EventArgs e)
+        {
+            using (StreamReader file = File.OpenText("serialized.json"))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                _elevi = (List<Elev>)serializer.Deserialize(file, typeof(List<Elev>));
+            }
+
+
         }
     }
 }

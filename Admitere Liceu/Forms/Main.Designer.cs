@@ -80,20 +80,22 @@ namespace Admitere_Liceu
             this.serializareToolStripMenuItem,
             this.deserializareToolStripMenuItem});
             this.binarToolStripMenuItem.Name = "binarToolStripMenuItem";
-            this.binarToolStripMenuItem.Size = new System.Drawing.Size(127, 26);
+            this.binarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.binarToolStripMenuItem.Text = "Binar";
             // 
             // serializareToolStripMenuItem
             // 
             this.serializareToolStripMenuItem.Name = "serializareToolStripMenuItem";
-            this.serializareToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.serializareToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.serializareToolStripMenuItem.Text = "Serializare";
+            this.serializareToolStripMenuItem.Click += new System.EventHandler(this.serializareBinary);
             // 
             // deserializareToolStripMenuItem
             // 
             this.deserializareToolStripMenuItem.Name = "deserializareToolStripMenuItem";
-            this.deserializareToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.deserializareToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.deserializareToolStripMenuItem.Text = "Deserializare";
+            this.deserializareToolStripMenuItem.Click += new System.EventHandler(this.deserializareBinary);
             // 
             // xMLToolStripMenuItem
             // 
@@ -101,21 +103,22 @@ namespace Admitere_Liceu
             this.serializareToolStripMenuItem1,
             this.deserializareToolStripMenuItem1});
             this.xMLToolStripMenuItem.Name = "xMLToolStripMenuItem";
-            this.xMLToolStripMenuItem.Size = new System.Drawing.Size(127, 26);
+            this.xMLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.xMLToolStripMenuItem.Text = "XML";
             // 
             // serializareToolStripMenuItem1
             // 
             this.serializareToolStripMenuItem1.Name = "serializareToolStripMenuItem1";
-            this.serializareToolStripMenuItem1.Size = new System.Drawing.Size(178, 26);
+            this.serializareToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.serializareToolStripMenuItem1.Text = "Serializare";
-            this.serializareToolStripMenuItem1.Click += new System.EventHandler(this.serializareToolStripMenuItem1_Click);
+            this.serializareToolStripMenuItem1.Click += new System.EventHandler(this.serializareXML);
             // 
             // deserializareToolStripMenuItem1
             // 
             this.deserializareToolStripMenuItem1.Name = "deserializareToolStripMenuItem1";
-            this.deserializareToolStripMenuItem1.Size = new System.Drawing.Size(178, 26);
+            this.deserializareToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.deserializareToolStripMenuItem1.Text = "Deserializare";
+            this.deserializareToolStripMenuItem1.Click += new System.EventHandler(this.deserializareXML);
             // 
             // jSONToolStripMenuItem
             // 
@@ -123,20 +126,22 @@ namespace Admitere_Liceu
             this.serializareToolStripMenuItem2,
             this.deserializareToolStripMenuItem2});
             this.jSONToolStripMenuItem.Name = "jSONToolStripMenuItem";
-            this.jSONToolStripMenuItem.Size = new System.Drawing.Size(127, 26);
+            this.jSONToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.jSONToolStripMenuItem.Text = "JSON";
             // 
             // serializareToolStripMenuItem2
             // 
             this.serializareToolStripMenuItem2.Name = "serializareToolStripMenuItem2";
-            this.serializareToolStripMenuItem2.Size = new System.Drawing.Size(178, 26);
+            this.serializareToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
             this.serializareToolStripMenuItem2.Text = "Serializare";
+            this.serializareToolStripMenuItem2.Click += new System.EventHandler(this.serializareJSON);
             // 
             // deserializareToolStripMenuItem2
             // 
             this.deserializareToolStripMenuItem2.Name = "deserializareToolStripMenuItem2";
-            this.deserializareToolStripMenuItem2.Size = new System.Drawing.Size(178, 26);
+            this.deserializareToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
             this.deserializareToolStripMenuItem2.Text = "Deserializare";
+            this.deserializareToolStripMenuItem2.Click += new System.EventHandler(this.deserializareJSON);
             // 
             // btnInscriere
             // 
