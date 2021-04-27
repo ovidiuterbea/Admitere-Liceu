@@ -123,12 +123,16 @@ namespace Admitere_Liceu.Forms
 
         private void tbCNP_Validating(object sender, CancelEventArgs e)
         {
-            // 13 caractere
+            if(tbCNP.Text.Length != 13)
+            {
+                errorProvider.SetError(tbCNP, "CNP invalid !");
+                e.Cancel = true;
+            }
         }
 
         private void tbCNP_Validated(object sender, EventArgs e)
         {
-
+            errorProvider.SetError(tbCNP, null);
         }
     }
 }

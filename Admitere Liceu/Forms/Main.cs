@@ -20,12 +20,14 @@ namespace Admitere_Liceu
         public Elev _elevConst;
         public Elev _elevMain;
         public Examen _examenMain;
+        public List<Elev> _elevi;
         public Main()
         {
             InitializeComponent();
             _liceeMain = new List<Liceu>();
             _examenMain = new Examen();
             _elevConst = new Elev();
+            _elevi = new List<Elev>();
         }
 
         private void btnInscriere_Click(object sender, EventArgs e)
@@ -37,17 +39,17 @@ namespace Admitere_Liceu
             _elevConst = l1._elev;
 
             _elevMain = new Elev(_elevConst.Nume, _elevConst.Prenume, _elevConst.Sex, _elevConst.Adresa, _elevConst.ZiDeNastere, _liceeMain, _examenMain,_elevConst.MediePeScGenerala,_elevConst.CNP);
-
+            _elevi.Add(_elevMain);
 
 
         }
 
         private void serializareToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(Elev));
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Elev>));
             using (FileStream stream = File.Create("serialized.xml"))
             {
-                serializer.Serialize(stream, _elevMain);
+                serializer.Serialize(stream, _elevi);
                 //serializer.Serialize(stream, _examenMain);
             }
         }

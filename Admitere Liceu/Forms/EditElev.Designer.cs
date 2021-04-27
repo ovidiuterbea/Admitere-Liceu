@@ -29,6 +29,7 @@ namespace Admitere_Liceu.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label8 = new System.Windows.Forms.Label();
             this.tbDataNasterii = new System.Windows.Forms.DateTimePicker();
             this.tbCNP = new System.Windows.Forms.TextBox();
@@ -45,6 +46,8 @@ namespace Admitere_Liceu.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -70,6 +73,9 @@ namespace Admitere_Liceu.Forms
             this.tbCNP.Name = "tbCNP";
             this.tbCNP.Size = new System.Drawing.Size(194, 23);
             this.tbCNP.TabIndex = 26;
+            this.tbCNP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCNP_KeyPress);
+            this.tbCNP.Validating += new System.ComponentModel.CancelEventHandler(this.tbCNP_Validating);
+            this.tbCNP.Validated += new System.EventHandler(this.tbCNP_Validated);
             // 
             // tbMedieSc
             // 
@@ -77,6 +83,9 @@ namespace Admitere_Liceu.Forms
             this.tbMedieSc.Name = "tbMedieSc";
             this.tbMedieSc.Size = new System.Drawing.Size(105, 23);
             this.tbMedieSc.TabIndex = 25;
+            this.tbMedieSc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbMedieSc_KeyPress);
+            this.tbMedieSc.Validating += new System.ComponentModel.CancelEventHandler(this.tbMedieSc_Validating);
+            this.tbMedieSc.Validated += new System.EventHandler(this.tbMedieSc_Validated);
             // 
             // tbSexElev
             // 
@@ -98,6 +107,9 @@ namespace Admitere_Liceu.Forms
             this.tbPrenumeElev.Name = "tbPrenumeElev";
             this.tbPrenumeElev.Size = new System.Drawing.Size(155, 23);
             this.tbPrenumeElev.TabIndex = 22;
+            this.tbPrenumeElev.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPrenumeElev_KeyPress);
+            this.tbPrenumeElev.Validating += new System.ComponentModel.CancelEventHandler(this.tbPrenumeElev_Validating);
+            this.tbPrenumeElev.Validated += new System.EventHandler(this.tbPrenumeElev_Validated);
             // 
             // tbNumeElev
             // 
@@ -105,6 +117,9 @@ namespace Admitere_Liceu.Forms
             this.tbNumeElev.Name = "tbNumeElev";
             this.tbNumeElev.Size = new System.Drawing.Size(155, 23);
             this.tbNumeElev.TabIndex = 21;
+            this.tbNumeElev.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNumeElev_KeyPress);
+            this.tbNumeElev.Validating += new System.ComponentModel.CancelEventHandler(this.tbNumeElev_Validating);
+            this.tbNumeElev.Validated += new System.EventHandler(this.tbNumeElev_Validated);
             // 
             // label7
             // 
@@ -183,6 +198,10 @@ namespace Admitere_Liceu.Forms
             this.btnOk.UseVisualStyleBackColor = false;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // EditElev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -210,6 +229,7 @@ namespace Admitere_Liceu.Forms
             this.Name = "EditElev";
             this.Text = "EditElev";
             this.Load += new System.EventHandler(this.EditElev_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,5 +253,6 @@ namespace Admitere_Liceu.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
