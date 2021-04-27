@@ -1,24 +1,120 @@
 <?xml version="1.0"?>
 <ArrayOfElev xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Elev>
-    <Nume>fdsfsdf</Nume>
-    <Prenume>fdsfsdfsdf</Prenume>
-    <CNP>5000500500500</CNP>
-    <Adresa>sdfsdfsd</Adresa>
-    <Sex>fsdfsdf</Sex>
-    <MediePeScGenerala>9</MediePeScGenerala>
+    <Nume>Terbea</Nume>
+    <Prenume>Ovidiu</Prenume>
+    <CNP>5000500500400</CNP>
+    <Adresa>Aleea Bradului nr 7</Adresa>
+    <Sex>M</Sex>
+    <MediePeScGenerala>9.2</MediePeScGenerala>
     <Examen>
-      <NotaMatematica>8</NotaMatematica>
-      <NotaRomana>8</NotaRomana>
+      <NotaMatematica>9.5</NotaMatematica>
+      <NotaRomana>9.25</NotaRomana>
     </Examen>
     <Licee>
       <Liceu>
-        <NumeLiceu>ceva</NumeLiceu>
-        <MedieLiceu>8</MedieLiceu>
-        <Specializare>Arta actorului</Specializare>
-        <Profil>Artistic</Profil>
+        <NumeLiceu>Colegiul National Sfantul Sava</NumeLiceu>
+        <MedieLiceu>9.8</MedieLiceu>
+        <Specializare>Matematica-Informatica</Specializare>
+        <Profil>Real</Profil>
+      </Liceu>
+      <Liceu>
+        <NumeLiceu>Colegiul National Gheorghe Lazar</NumeLiceu>
+        <MedieLiceu>9.71</MedieLiceu>
+        <Specializare>Matematica-Informatica</Specializare>
+        <Profil>Real</Profil>
+      </Liceu>
+      <Liceu>
+        <NumeLiceu>Colegiul National Grigore Moisil</NumeLiceu>
+        <MedieLiceu>9.32</MedieLiceu>
+        <Specializare>Matematica-Informatica</Specializare>
+        <Profil>Real</Profil>
+      </Liceu>
+      <Liceu>
+        <NumeLiceu>Liceul Teoretic Dante Aligheri</NumeLiceu>
+        <MedieLiceu>8.43</MedieLiceu>
+        <Specializare>Matematica-Informatica</Specializare>
+        <Profil>Real</Profil>
       </Liceu>
     </Licee>
-    <ZiDeNastere>2021-04-27T11:25:38.5672451+03:00</ZiDeNastere>
+    <ZiDeNastere>2000-05-09T13:54:11</ZiDeNastere>
+  </Elev>
+  <Elev>
+    <Nume>Jean</Nume>
+    <Prenume>Florin</Prenume>
+    <CNP>5000400400400</CNP>
+    <Adresa>Strada Trandafirilor nr 7</Adresa>
+    <Sex>M</Sex>
+    <MediePeScGenerala>7</MediePeScGenerala>
+    <Examen>
+      <NotaMatematica>6</NotaMatematica>
+      <NotaRomana>6</NotaRomana>
+    </Examen>
+    <Licee>
+      <Liceu>
+        <NumeLiceu>Colegiul National Sfantul Sava</NumeLiceu>
+        <MedieLiceu>9.8</MedieLiceu>
+        <Specializare>Matematica-Informatica</Specializare>
+        <Profil>Real</Profil>
+      </Liceu>
+      <Liceu>
+        <NumeLiceu>Colegiul National Gheorghe Lazar</NumeLiceu>
+        <MedieLiceu>9.71</MedieLiceu>
+        <Specializare>Matematica-Informatica</Specializare>
+        <Profil>Real</Profil>
+      </Liceu>
+      <Liceu>
+        <NumeLiceu>Colegiul National Grigore Moisil</NumeLiceu>
+        <MedieLiceu>9.32</MedieLiceu>
+        <Specializare>Matematica-Informatica</Specializare>
+        <Profil>Real</Profil>
+      </Liceu>
+      <Liceu>
+        <NumeLiceu>Liceul Teoretic Dante Aligheri</NumeLiceu>
+        <MedieLiceu>8.43</MedieLiceu>
+        <Specializare>Matematica-Informatica</Specializare>
+        <Profil>Real</Profil>
+      </Liceu>
+      <Liceu>
+        <NumeLiceu>Colegiul National Sfantul Sava</NumeLiceu>
+        <MedieLiceu>9.8</MedieLiceu>
+        <Specializare>Matematica-Informatica</Specializare>
+        <Profil>Real</Profil>
+      </Liceu>
+      <Liceu>
+        <NumeLiceu>Colegiul National Matei Basarab</NumeLiceu>
+        <MedieLiceu>9.2</MedieLiceu>
+        <Specializare>Matematica-Informatica</Specializare>
+        <Profil>Real</Profil>
+      </Liceu>
+    </Licee>
+    <ZiDeNastere>2003-03-05T13:57:29</ZiDeNastere>
+  </Elev>
+  <Elev>
+    <Nume>Trica</Nume>
+    <Prenume>Irina</Prenume>
+    <CNP>4000400400400</CNP>
+    <Adresa>Aleea Cainilor nr 5</Adresa>
+    <Sex>F</Sex>
+    <MediePeScGenerala>4</MediePeScGenerala>
+    <Examen>
+      <NotaMatematica>5</NotaMatematica>
+      <NotaRomana>5</NotaRomana>
+    </Examen>
+    <Licee>
+      <Liceu>
+        <NumeLiceu>Liceul National Jean Monet</NumeLiceu>
+        <MedieLiceu>8</MedieLiceu>
+        <Specializare>Filologie</Specializare>
+        <Profil>Uman</Profil>
+      </Liceu>
+      <Liceu>
+        <NumeLiceu>Liceul National Jean Monet</NumeLiceu>
+        <MedieLiceu>7</MedieLiceu>
+        <Specializare>Filologie</Specializare>
+        <Profil>Uman</Profil>
+      </Liceu>
+    </Licee>
+    <ZiDeNastere>2004-06-22T14:08:24</ZiDeNastere>
   </Elev>
 </ArrayOfElev>

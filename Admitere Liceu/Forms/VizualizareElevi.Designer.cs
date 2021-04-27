@@ -41,9 +41,10 @@ namespace Admitere_Liceu.Forms
             this.dgvElevi.Name = "dgvElevi";
             this.dgvElevi.RowHeadersWidth = 51;
             this.dgvElevi.RowTemplate.Height = 24;
-            this.dgvElevi.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvElevi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvElevi.Size = new System.Drawing.Size(776, 344);
             this.dgvElevi.TabIndex = 0;
+            this.dgvElevi.DoubleClick += new System.EventHandler(this.dgvElevi_DoubleClick);
             // 
             // label1
             // 

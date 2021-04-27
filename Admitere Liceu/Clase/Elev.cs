@@ -51,7 +51,7 @@ namespace Admitere_Liceu.Clase
         }
 
 
-        float medieElev()
+        public float medieElev()
         {
             float medieExamen = Examen.medieExamen();
 
