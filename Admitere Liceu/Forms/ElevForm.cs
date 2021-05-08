@@ -1,4 +1,5 @@
 ﻿using Admitere_Liceu.Clase;
+using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,10 +16,38 @@ namespace Admitere_Liceu.Forms
         
     {
         public Elev elev;
-        public ElevForm()
+        private string connectionString = "Data Source=database.db";
+        public Examen examen;
+        public ElevForm(Examen examen)
         {
             InitializeComponent();
             elev = new Elev();
+            this.examen = examen;
+        }
+
+        private void AddElev(Elev elevdb)
+        {
+            string query = "INSERT INTO Elev(NUME, PRENUME, MEDIE_ADMITERE,ID_EXAMEN ) VALUES(@nume, @prenume, @medie, @id_examen); SELECT last_insert_rowid()";
+
+            using (SqliteConnection connection = new SqliteConnection(connectionString))
+            {
+                elevdb.Examen = new Examen(examen.NotaMatematica, examen.NotaRomana);
+
+                elevdb.Examen.ID = examen.ID;
+                
+                
+                SqliteCommand command = new SqliteCommand(query, connection);
+                command.Parameters.AddWithValue("@nume", elevdb.Nume);
+                command.Parameters.AddWithValue("@prenume", elevdb.Prenume);
+                command.Parameters.AddWithValue("@medie", elevdb.medieElev());
+                command.Parameters.AddWithValue("@id_examen", elevdb.Examen.ID);
+                connection.Open();
+
+                long id = (long)command.ExecuteScalar();
+                elevdb.ID = id;
+
+                elev = elevdb;
+            }
         }
 
         private void btnOk_Click(object sender, EventArgs e)
@@ -33,7 +62,7 @@ namespace Admitere_Liceu.Forms
 
             Elev elevCopie = new Elev(numeElev, prenumeElev, sexElev, adresaElev, dataNasterii,medieScElev,cnpElev);
 
-            elev = elevCopie;
+            AddElev(elevCopie);
 
             MessageBox.Show("Elevul cu numele " + numeElev + " " + prenumeElev + " a fost adaugat.");
         }

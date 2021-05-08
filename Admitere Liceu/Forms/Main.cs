@@ -1,5 +1,6 @@
 ﻿using Admitere_Liceu.Clase;
 using Admitere_Liceu.Forms;
+using Microsoft.Data.Sqlite;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace Admitere_Liceu
         public Elev _elevMain;
         public Examen _examenMain;
         public List<Elev> _elevi;
+        private string connectionString = "Data Source=database.db";
         public Main()
         {
             InitializeComponent();
@@ -113,5 +115,7 @@ namespace Admitere_Liceu
                 btnVisualizeElevi_Click(sender, e);
             }
         }
+
+       
     }
 }

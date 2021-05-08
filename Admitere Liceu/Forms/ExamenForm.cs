@@ -58,7 +58,7 @@ namespace Admitere_Liceu.Forms
 
         private void btnNextToExamen_Click(object sender, EventArgs e)
         {
-            ElevForm el1 = new ElevForm();
+            ElevForm el1 = new ElevForm(_examen);
             el1.ShowDialog();
             _elevEx = el1.elev;
          
