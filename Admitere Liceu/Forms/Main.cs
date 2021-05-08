@@ -105,5 +105,13 @@ namespace Admitere_Liceu
             VizualizareElevi vizualizareElevi = new VizualizareElevi(_elevi);
             vizualizareElevi.ShowDialog();
         }
+
+        private void Main_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Control && e.KeyCode.ToString()=="O")
+            {
+                btnVisualizeElevi_Click(sender, e);
+            }
+        }
     }
 }

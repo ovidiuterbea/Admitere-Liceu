@@ -17,3 +17,4 @@ C:\Users\asus\Desktop\Admitere Liceu\Admitere Liceu\bin\Debug\Newtonsoft.Json.dl
 C:\Users\asus\Desktop\Admitere Liceu\Admitere Liceu\bin\Debug\Newtonsoft.Json.xml
 C:\Users\asus\Desktop\Admitere Liceu\Admitere Liceu\obj\Debug\Admitere_Liceu.Forms.VizualizareElevi.resources
 C:\Users\asus\Desktop\Admitere Liceu\Admitere Liceu\obj\Debug\Admitere Liceu.csproj.CopyComplete
+C:\Users\asus\Desktop\Admitere Liceu\Admitere Liceu\obj\Debug\Admitere Liceu.csprojAssemblyReference.cache

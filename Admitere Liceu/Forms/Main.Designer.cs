@@ -81,7 +81,7 @@ namespace Admitere_Liceu
             this.serializareToolStripMenuItem,
             this.deserializareToolStripMenuItem});
             this.binarToolStripMenuItem.Name = "binarToolStripMenuItem";
-            this.binarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.binarToolStripMenuItem.Size = new System.Drawing.Size(127, 26);
             this.binarToolStripMenuItem.Text = "Binar";
             // 
             // serializareToolStripMenuItem
@@ -104,20 +104,20 @@ namespace Admitere_Liceu
             this.serializareToolStripMenuItem1,
             this.deserializareToolStripMenuItem1});
             this.xMLToolStripMenuItem.Name = "xMLToolStripMenuItem";
-            this.xMLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.xMLToolStripMenuItem.Size = new System.Drawing.Size(127, 26);
             this.xMLToolStripMenuItem.Text = "XML";
             // 
             // serializareToolStripMenuItem1
             // 
             this.serializareToolStripMenuItem1.Name = "serializareToolStripMenuItem1";
-            this.serializareToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.serializareToolStripMenuItem1.Size = new System.Drawing.Size(178, 26);
             this.serializareToolStripMenuItem1.Text = "Serializare";
             this.serializareToolStripMenuItem1.Click += new System.EventHandler(this.serializareXML);
             // 
             // deserializareToolStripMenuItem1
             // 
             this.deserializareToolStripMenuItem1.Name = "deserializareToolStripMenuItem1";
-            this.deserializareToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.deserializareToolStripMenuItem1.Size = new System.Drawing.Size(178, 26);
             this.deserializareToolStripMenuItem1.Text = "Deserializare";
             this.deserializareToolStripMenuItem1.Click += new System.EventHandler(this.deserializareXML);
             // 
@@ -127,7 +127,7 @@ namespace Admitere_Liceu
             this.serializareToolStripMenuItem2,
             this.deserializareToolStripMenuItem2});
             this.jSONToolStripMenuItem.Name = "jSONToolStripMenuItem";
-            this.jSONToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.jSONToolStripMenuItem.Size = new System.Drawing.Size(127, 26);
             this.jSONToolStripMenuItem.Text = "JSON";
             // 
             // serializareToolStripMenuItem2
@@ -188,10 +188,12 @@ namespace Admitere_Liceu
             this.Controls.Add(this.btnInscriere);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admitere Liceu";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

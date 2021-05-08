@@ -8,6 +8,7 @@ namespace Admitere_Liceu.Clase
 {
     public class Examen
     {
+        public long ID { get; set; }
         public float NotaMatematica { get; set; }
         public float NotaRomana { get; set; }
 
