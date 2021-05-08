@@ -1,5 +1,6 @@
 ﻿using Admitere_Liceu.Clase;
 using Admitere_Liceu.Forms;
+using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,12 +28,32 @@ namespace Admitere_Liceu.Forms
         {
             float notaMate = float.Parse(tbNotaMate.Text.ToString());
             float notaRomana = float.Parse(tbNotaRomana.Text.ToString());
-            _examen = new Examen(notaMate, notaRomana);
+            Examen examenCopie = new Examen(notaMate, notaRomana);
 
-            tbMedieExamen.Text = _examen.medieExamen().ToString();
+            tbMedieExamen.Text = examenCopie.medieExamen().ToString();
 
+            AddExamen(examenCopie);
             
-            
+        }
+
+        private void AddExamen(Examen examen)
+        {
+            string query = "INSERT INTO Examen(NotaMatematica, NotaRomana) VALUES(@notaMatematica, @notaRomana); SELECT last_insert_rowid()";
+
+            using (SqliteConnection connection = new SqliteConnection(connectionString))
+            {
+                SqliteCommand command = new SqliteCommand(query, connection);
+                command.Parameters.AddWithValue("@notaMatematica", examen.NotaMatematica);
+                command.Parameters.AddWithValue("@notaRomana", examen.NotaRomana);
+                
+
+                connection.Open();
+
+                long id = (long)command.ExecuteScalar();
+                examen.ID = id;
+
+                _examen =examen;
+            }
         }
 
         private void btnNextToExamen_Click(object sender, EventArgs e)
