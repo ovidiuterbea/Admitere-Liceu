@@ -16,6 +16,7 @@ namespace Admitere_Liceu.Forms
     {
         public Examen _examen;
         public Elev _elevEx;
+        private string connectionString = "Data Source=database.db";
         public ExamenForm()
         {
             InitializeComponent();
