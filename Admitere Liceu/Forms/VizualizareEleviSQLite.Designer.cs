@@ -162,7 +162,7 @@ namespace Admitere_Liceu.Forms
             // 
             this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnDelete.BackColor = System.Drawing.Color.Orange;
-            this.btnDelete.Location = new System.Drawing.Point(47, 511);
+            this.btnDelete.Location = new System.Drawing.Point(420, 516);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(86, 34);
             this.btnDelete.TabIndex = 17;

@@ -119,12 +119,14 @@ namespace Admitere_Liceu.Forms
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             UpdateElevi();
+            
             DisplayElevi();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             DeleteElevi();
+            
             DisplayElevi();
         }
     }
