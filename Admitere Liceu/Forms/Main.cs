@@ -116,6 +116,25 @@ namespace Admitere_Liceu
             }
         }
 
-       
+        private void exportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+
+
+            sfd.Filter = "CSV File | *.csv";
+            sfd.Title = "export csv";
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                using (StreamWriter writer = File.CreateText(sfd.FileName))
+                {
+                    writer.WriteLine("\"Nume\" , \"Prenume\" , \"Medie admitere\"");
+                    foreach (Elev elev in _elevi)
+                    {
+                        writer.WriteLine($"{elev.Nume}\",{elev.Prenume}\",{elev.medieElev()}");
+                    }
+                }
+
+            }
+        }
     }
 }
