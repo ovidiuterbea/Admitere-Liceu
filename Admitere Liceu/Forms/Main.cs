@@ -136,5 +136,11 @@ namespace Admitere_Liceu
 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            VizualizareEleviSQLite v1 = new VizualizareEleviSQLite();
+            v1.ShowDialog();
+        }
     }
 }

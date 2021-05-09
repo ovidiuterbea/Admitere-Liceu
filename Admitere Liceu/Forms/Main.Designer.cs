@@ -45,6 +45,7 @@ namespace Admitere_Liceu
             this.label_Welcome = new System.Windows.Forms.Label();
             this.btnVisualizeElevi = new System.Windows.Forms.Button();
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,7 +150,7 @@ namespace Admitere_Liceu
             // btnInscriere
             // 
             this.btnInscriere.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnInscriere.Location = new System.Drawing.Point(95, 223);
+            this.btnInscriere.Location = new System.Drawing.Point(42, 223);
             this.btnInscriere.Name = "btnInscriere";
             this.btnInscriere.Size = new System.Drawing.Size(119, 71);
             this.btnInscriere.TabIndex = 1;
@@ -171,7 +172,7 @@ namespace Admitere_Liceu
             // btnVisualizeElevi
             // 
             this.btnVisualizeElevi.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnVisualizeElevi.Location = new System.Drawing.Point(348, 223);
+            this.btnVisualizeElevi.Location = new System.Drawing.Point(380, 223);
             this.btnVisualizeElevi.Name = "btnVisualizeElevi";
             this.btnVisualizeElevi.Size = new System.Drawing.Size(119, 71);
             this.btnVisualizeElevi.TabIndex = 3;
@@ -186,12 +187,24 @@ namespace Admitere_Liceu
             this.exportToolStripMenuItem.Text = "Export";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
+            // button1
+            // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.Location = new System.Drawing.Point(206, 223);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 71);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Vizualizare elevi (SQLite)";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(553, 429);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVisualizeElevi);
             this.Controls.Add(this.label_Welcome);
             this.Controls.Add(this.btnInscriere);
@@ -228,6 +241,7 @@ namespace Admitere_Liceu
         private System.Windows.Forms.Label label_Welcome;
         private System.Windows.Forms.Button btnVisualizeElevi;
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

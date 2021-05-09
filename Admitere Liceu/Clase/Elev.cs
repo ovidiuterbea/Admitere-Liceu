@@ -23,6 +23,7 @@ namespace Admitere_Liceu.Clase
 
         public List<Liceu> Licee { get; set; }
         public DateTime ZiDeNastere { get; set; }
+        public double MedieFinalaForSQL { get; set; }
 
         public Elev()
         {
@@ -49,6 +50,14 @@ namespace Admitere_Liceu.Clase
         {
             Licee.AddRange(licee);
             Examen = examen;
+        }
+
+        public Elev(long id,string nume,string prenume,double medie)
+        {
+            this.ID = id;
+            this.Nume = nume;
+            this.Prenume = prenume;
+            this.MedieFinalaForSQL = medie;
         }
 
 
