@@ -101,7 +101,6 @@ namespace Admitere_Liceu.Forms
             this.tbNumeLiceu.Size = new System.Drawing.Size(194, 23);
             this.tbNumeLiceu.TabIndex = 4;
             this.tbNumeLiceu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNumeLiceu_KeyPress);
-            
             // 
             // tbMedieLiceu
             // 

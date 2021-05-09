@@ -36,3 +36,4 @@ C:\Users\asus\Desktop\Admitere Liceu\Admitere Liceu\bin\Debug\System.Memory.xml
 C:\Users\asus\Desktop\Admitere Liceu\Admitere Liceu\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\asus\Desktop\Admitere Liceu\Admitere Liceu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\asus\Desktop\Admitere Liceu\Admitere Liceu\obj\Debug\Admitere_Liceu.Forms.VizualizareEleviSQLite.resources
+C:\Users\asus\Desktop\Admitere Liceu\Admitere Liceu\obj\Debug\Admitere Liceu.csprojAssemblyReference.cache

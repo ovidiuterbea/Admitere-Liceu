@@ -46,6 +46,52 @@ namespace Admitere_Liceu.Forms
             }
         }
 
+        private void UpdateElevi()
+        {
+            string query = "Update Elev set MEDIE_ADMITERE = @medie where ID = @id";
+
+            using (SqliteConnection connection = new SqliteConnection(connectionString))
+            {
+                SqliteCommand command = new SqliteCommand(query, connection);
+                command.Parameters.AddWithValue("@medie", tbMedie.Text);
+                command.Parameters.AddWithValue("@id", tbID.Text);
+
+                connection.Open();
+
+                int i = command.ExecuteNonQuery();
+
+                if (i == 1)
+                {
+                    MessageBox.Show("Medie schimbata cu succes !");
+                }
+
+
+
+            }
+        }
+        private void DeleteElevi()
+        {
+            string query = "Delete from Elev where ID = @id";
+
+            using (SqliteConnection connection = new SqliteConnection(connectionString))
+            {
+                SqliteCommand command = new SqliteCommand(query, connection);
+                command.Parameters.AddWithValue("@id", tbIDDelete.Text);
+
+                connection.Open();
+
+                int i = command.ExecuteNonQuery();
+
+                if (i == 1)
+                {
+                    MessageBox.Show("Rand sters cu succes !");
+                }
+
+
+
+            }
+        }
+
         public void DisplayElevi()
         {
             dgvEleviSQLite.Rows.Clear();
@@ -67,6 +113,18 @@ namespace Admitere_Liceu.Forms
         private void VizualizareEleviSQLite_Load(object sender, EventArgs e)
         {
             LoadElevi();
+            DisplayElevi();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            UpdateElevi();
+            DisplayElevi();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DeleteElevi();
             DisplayElevi();
         }
     }
