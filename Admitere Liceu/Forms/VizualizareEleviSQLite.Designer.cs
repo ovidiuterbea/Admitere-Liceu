@@ -100,8 +100,7 @@ namespace Admitere_Liceu.Forms
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 404);
+            this.label3.Location = new System.Drawing.Point(12, 404);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(227, 21);
             this.label3.TabIndex = 3;
@@ -109,7 +108,7 @@ namespace Admitere_Liceu.Forms
             // 
             // tbMedie
             // 
-            this.tbMedie.Location = new System.Drawing.Point(276, 401);
+            this.tbMedie.Location = new System.Drawing.Point(245, 401);
             this.tbMedie.Name = "tbMedie";
             this.tbMedie.Size = new System.Drawing.Size(100, 28);
             this.tbMedie.TabIndex = 4;
@@ -117,7 +116,7 @@ namespace Admitere_Liceu.Forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(401, 404);
+            this.label4.Location = new System.Drawing.Point(349, 404);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 21);
             this.label4.TabIndex = 5;
@@ -125,7 +124,7 @@ namespace Admitere_Liceu.Forms
             // 
             // tbID
             // 
-            this.tbID.Location = new System.Drawing.Point(515, 401);
+            this.tbID.Location = new System.Drawing.Point(460, 401);
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(86, 28);
             this.tbID.TabIndex = 6;
@@ -134,9 +133,9 @@ namespace Admitere_Liceu.Forms
             // 
             this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnUpdate.BackColor = System.Drawing.Color.Orange;
-            this.btnUpdate.Location = new System.Drawing.Point(515, 445);
+            this.btnUpdate.Location = new System.Drawing.Point(559, 401);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(86, 34);
+            this.btnUpdate.Size = new System.Drawing.Size(86, 28);
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -144,8 +143,7 @@ namespace Admitere_Liceu.Forms
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 485);
+            this.label5.Location = new System.Drawing.Point(0, 485);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(270, 21);
             this.label5.TabIndex = 15;
@@ -153,7 +151,7 @@ namespace Admitere_Liceu.Forms
             // 
             // tbIDDelete
             // 
-            this.tbIDDelete.Location = new System.Drawing.Point(319, 482);
+            this.tbIDDelete.Location = new System.Drawing.Point(276, 482);
             this.tbIDDelete.Name = "tbIDDelete";
             this.tbIDDelete.Size = new System.Drawing.Size(100, 28);
             this.tbIDDelete.TabIndex = 16;
@@ -162,9 +160,9 @@ namespace Admitere_Liceu.Forms
             // 
             this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnDelete.BackColor = System.Drawing.Color.Orange;
-            this.btnDelete.Location = new System.Drawing.Point(420, 516);
+            this.btnDelete.Location = new System.Drawing.Point(401, 482);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 34);
+            this.btnDelete.Size = new System.Drawing.Size(86, 28);
             this.btnDelete.TabIndex = 17;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
