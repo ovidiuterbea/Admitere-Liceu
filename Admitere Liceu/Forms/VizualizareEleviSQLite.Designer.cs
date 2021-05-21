@@ -54,12 +54,12 @@ namespace Admitere_Liceu.Forms
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgvEleviSQLite.Location = new System.Drawing.Point(47, 79);
+            this.dgvEleviSQLite.Location = new System.Drawing.Point(165, 78);
             this.dgvEleviSQLite.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEleviSQLite.Name = "dgvEleviSQLite";
             this.dgvEleviSQLite.RowHeadersWidth = 51;
             this.dgvEleviSQLite.RowTemplate.Height = 24;
-            this.dgvEleviSQLite.Size = new System.Drawing.Size(554, 286);
+            this.dgvEleviSQLite.Size = new System.Drawing.Size(552, 286);
             this.dgvEleviSQLite.TabIndex = 0;
             // 
             // Column1
@@ -92,11 +92,12 @@ namespace Admitere_Liceu.Forms
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(206, 22);
+            this.label1.Location = new System.Drawing.Point(331, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(248, 53);
             this.label1.TabIndex = 1;
             this.label1.Text = "Vizualizare elevi din SQLite";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -108,7 +109,7 @@ namespace Admitere_Liceu.Forms
             // 
             // tbMedie
             // 
-            this.tbMedie.Location = new System.Drawing.Point(245, 401);
+            this.tbMedie.Location = new System.Drawing.Point(276, 404);
             this.tbMedie.Name = "tbMedie";
             this.tbMedie.Size = new System.Drawing.Size(100, 28);
             this.tbMedie.TabIndex = 4;
@@ -116,7 +117,7 @@ namespace Admitere_Liceu.Forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(349, 404);
+            this.label4.Location = new System.Drawing.Point(398, 407);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 21);
             this.label4.TabIndex = 5;
@@ -124,7 +125,7 @@ namespace Admitere_Liceu.Forms
             // 
             // tbID
             // 
-            this.tbID.Location = new System.Drawing.Point(460, 401);
+            this.tbID.Location = new System.Drawing.Point(515, 402);
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(86, 28);
             this.tbID.TabIndex = 6;
@@ -133,7 +134,7 @@ namespace Admitere_Liceu.Forms
             // 
             this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnUpdate.BackColor = System.Drawing.Color.Orange;
-            this.btnUpdate.Location = new System.Drawing.Point(559, 401);
+            this.btnUpdate.Location = new System.Drawing.Point(664, 401);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(86, 28);
             this.btnUpdate.TabIndex = 14;
@@ -160,7 +161,7 @@ namespace Admitere_Liceu.Forms
             // 
             this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnDelete.BackColor = System.Drawing.Color.Orange;
-            this.btnDelete.Location = new System.Drawing.Point(401, 482);
+            this.btnDelete.Location = new System.Drawing.Point(402, 481);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(86, 28);
             this.btnDelete.TabIndex = 17;
@@ -173,7 +174,7 @@ namespace Admitere_Liceu.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(657, 557);
+            this.ClientSize = new System.Drawing.Size(885, 557);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.tbIDDelete);
             this.Controls.Add(this.label5);

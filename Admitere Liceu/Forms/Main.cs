@@ -4,6 +4,7 @@ using Microsoft.Data.Sqlite;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
@@ -141,6 +142,98 @@ namespace Admitere_Liceu
         {
             VizualizareEleviSQLite v1 = new VizualizareEleviSQLite();
             v1.ShowDialog();
+        }
+
+        
+       
+
+        
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            if(printDialog.ShowDialog() == DialogResult.OK)
+            {
+                printDocument.Print();
+            }
+        }
+
+        private void btnPrintPreview_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog.ShowDialog();
+        }
+
+        private void btnPageSetup_Click(object sender, EventArgs e)
+        {
+            if (pageSetupDialog.ShowDialog() == DialogResult.OK)
+                printDocument.DefaultPageSettings = pageSetupDialog.PageSettings;
+        }
+
+        private void printDocument_PrintPage_1(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Font font = new Font("Times New Roman", 24);
+
+            var pageSettings = e.PageSettings;
+
+            var printAreaHeight = e.MarginBounds.Height;
+            var printAreaWidth = e.MarginBounds.Width;
+
+            var marginLeft = e.MarginBounds.Left;
+            var marginTop = e.MarginBounds.Top;
+
+            int rowHeight = 40;
+            var columnWidth = printAreaWidth / 3;
+
+            var currentY = marginTop;
+            while (printIndex < _elevi.Count)
+            {
+                var currentX = marginLeft;
+
+                e.Graphics.DrawRectangle(
+                    Pens.Black,
+                    currentX,
+                    currentY,
+                    columnWidth,
+                    rowHeight);
+
+                e.Graphics.DrawString(
+                    _elevi[printIndex].Nume,
+                    font,
+                    Brushes.Black,
+                    currentX,
+                    currentY
+                    );
+
+                currentX += columnWidth;
+                e.Graphics.DrawRectangle(
+                    Pens.Black,
+                    currentX,
+                    currentY,
+                    columnWidth,
+                    rowHeight);
+
+                e.Graphics.DrawString(
+                    _elevi[printIndex].Prenume,
+                    font,
+                    Brushes.Black,
+                    new RectangleF(currentX, currentY, columnWidth, rowHeight));
+
+                currentY += rowHeight;
+
+                printIndex++;
+
+                if (currentY - marginTop + rowHeight > printAreaHeight)
+                {
+                    e.HasMorePages = true;
+                    break;
+                }
+            }
+        }
+
+        private int printIndex = 0;
+
+        private void printDocument_BeginPrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        {
+            printIndex = 0;
         }
     }
 }
