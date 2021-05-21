@@ -217,7 +217,23 @@ namespace Admitere_Liceu
                     Brushes.Black,
                     new RectangleF(currentX, currentY, columnWidth, rowHeight));
 
+                currentX += columnWidth;
+                e.Graphics.DrawRectangle(
+                    Pens.Black,
+                    currentX,
+                    currentY,
+                    columnWidth,
+                    rowHeight);
+
+                e.Graphics.DrawString(
+                   _elevi[printIndex].medieElev().ToString(),
+                   font,
+                   Brushes.Black,
+                   new RectangleF(currentX, currentY, columnWidth, rowHeight));
+
                 currentY += rowHeight;
+
+
 
                 printIndex++;
 
