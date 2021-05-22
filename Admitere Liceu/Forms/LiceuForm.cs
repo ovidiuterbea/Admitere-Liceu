@@ -58,6 +58,7 @@ namespace Admitere_Liceu.Forms
                 var listViewItem = new ListViewItem(liceu.NumeLiceu);
                 listViewItem.SubItems.Add(liceu.MedieLiceu.ToString());
                 listViewItem.SubItems.Add(liceu.Specializare);
+                listViewItem.SubItems.Add(liceu.Profil);
                 listViewItem.Tag = liceu;
                 lvHighschools.Items.Add(listViewItem);
 

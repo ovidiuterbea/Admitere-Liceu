@@ -34,9 +34,11 @@ namespace Admitere_Liceu.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.tbNumeLiceu = new System.Windows.Forms.TextBox();
             this.tbMedieLiceu = new System.Windows.Forms.TextBox();
-            this.tbSpecializare = new System.Windows.Forms.TextBox();
             this.btnOk = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBoxProfil = new System.Windows.Forms.ComboBox();
+            this.comboBoxSpecializare = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -66,11 +68,11 @@ namespace Admitere_Liceu.Forms
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(50, 143);
+            this.label3.Location = new System.Drawing.Point(84, 143);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 21);
+            this.label3.Size = new System.Drawing.Size(70, 21);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Specializarea :";
+            this.label3.Text = "Profilul :";
             // 
             // tbNumeLiceu
             // 
@@ -86,18 +88,11 @@ namespace Admitere_Liceu.Forms
             this.tbMedieLiceu.Size = new System.Drawing.Size(190, 22);
             this.tbMedieLiceu.TabIndex = 4;
             // 
-            // tbSpecializare
-            // 
-            this.tbSpecializare.Location = new System.Drawing.Point(212, 144);
-            this.tbSpecializare.Name = "tbSpecializare";
-            this.tbSpecializare.Size = new System.Drawing.Size(190, 22);
-            this.tbSpecializare.TabIndex = 5;
-            // 
             // btnOk
             // 
             this.btnOk.BackColor = System.Drawing.Color.Orange;
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOk.Location = new System.Drawing.Point(88, 201);
+            this.btnOk.Location = new System.Drawing.Point(88, 244);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(104, 47);
             this.btnOk.TabIndex = 13;
@@ -109,22 +104,54 @@ namespace Admitere_Liceu.Forms
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Orange;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(273, 201);
+            this.btnCancel.Location = new System.Drawing.Point(267, 244);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(104, 47);
             this.btnCancel.TabIndex = 14;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(50, 194);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(130, 21);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Specializarea :";
+            // 
+            // comboBoxProfil
+            // 
+            this.comboBoxProfil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxProfil.FormattingEnabled = true;
+            this.comboBoxProfil.Location = new System.Drawing.Point(212, 144);
+            this.comboBoxProfil.Name = "comboBoxProfil";
+            this.comboBoxProfil.Size = new System.Drawing.Size(194, 24);
+            this.comboBoxProfil.TabIndex = 16;
+            this.comboBoxProfil.SelectionChangeCommitted += new System.EventHandler(this.comboBoxProfil_SelectionChangeCommitted);
+            // 
+            // comboBoxSpecializare
+            // 
+            this.comboBoxSpecializare.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSpecializare.FormattingEnabled = true;
+            this.comboBoxSpecializare.Location = new System.Drawing.Point(212, 195);
+            this.comboBoxSpecializare.Name = "comboBoxSpecializare";
+            this.comboBoxSpecializare.Size = new System.Drawing.Size(194, 24);
+            this.comboBoxSpecializare.TabIndex = 17;
+            // 
             // EditLiceu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(451, 271);
+            this.ClientSize = new System.Drawing.Size(451, 322);
+            this.Controls.Add(this.comboBoxSpecializare);
+            this.Controls.Add(this.comboBoxProfil);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
-            this.Controls.Add(this.tbSpecializare);
             this.Controls.Add(this.tbMedieLiceu);
             this.Controls.Add(this.tbNumeLiceu);
             this.Controls.Add(this.label3);
@@ -146,8 +173,10 @@ namespace Admitere_Liceu.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbNumeLiceu;
         private System.Windows.Forms.TextBox tbMedieLiceu;
-        private System.Windows.Forms.TextBox tbSpecializare;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBoxProfil;
+        private System.Windows.Forms.ComboBox comboBoxSpecializare;
     }
 }

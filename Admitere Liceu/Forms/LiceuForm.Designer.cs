@@ -50,6 +50,7 @@ namespace Admitere_Liceu.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxProfil = new System.Windows.Forms.ComboBox();
             this.comboBoxSpecializare = new System.Windows.Forms.ComboBox();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,12 +133,13 @@ namespace Admitere_Liceu.Forms
             this.lvHighschools.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader3,
+            this.columnHeader4});
             this.lvHighschools.GridLines = true;
             this.lvHighschools.HideSelection = false;
-            this.lvHighschools.Location = new System.Drawing.Point(546, 115);
+            this.lvHighschools.Location = new System.Drawing.Point(505, 120);
             this.lvHighschools.Name = "lvHighschools";
-            this.lvHighschools.Size = new System.Drawing.Size(603, 326);
+            this.lvHighschools.Size = new System.Drawing.Size(601, 326);
             this.lvHighschools.TabIndex = 8;
             this.lvHighschools.UseCompatibleStateImageBehavior = false;
             this.lvHighschools.View = System.Windows.Forms.View.Details;
@@ -145,7 +147,7 @@ namespace Admitere_Liceu.Forms
             // columnHeader1
             // 
             this.columnHeader1.Text = "Nume Liceu";
-            this.columnHeader1.Width = 300;
+            this.columnHeader1.Width = 200;
             // 
             // columnHeader2
             // 
@@ -157,7 +159,7 @@ namespace Admitere_Liceu.Forms
             // 
             this.columnHeader3.Text = "Specializare";
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 200;
+            this.columnHeader3.Width = 150;
             // 
             // label2
             // 
@@ -246,6 +248,11 @@ namespace Admitere_Liceu.Forms
             this.comboBoxSpecializare.Size = new System.Drawing.Size(194, 25);
             this.comboBoxSpecializare.TabIndex = 16;
             // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Profil";
+            this.columnHeader4.Width = 150;
+            // 
             // LiceuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -302,5 +309,6 @@ namespace Admitere_Liceu.Forms
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxProfil;
         private System.Windows.Forms.ComboBox comboBoxSpecializare;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
