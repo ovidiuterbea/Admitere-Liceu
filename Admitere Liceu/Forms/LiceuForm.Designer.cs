@@ -41,6 +41,7 @@ namespace Admitere_Liceu.Forms
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnEditLiceu = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@ namespace Admitere_Liceu.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxProfil = new System.Windows.Forms.ComboBox();
             this.comboBoxSpecializare = new System.Windows.Forms.ComboBox();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +78,7 @@ namespace Admitere_Liceu.Forms
             // lbMedieLiceu
             // 
             this.lbMedieLiceu.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMedieLiceu.Location = new System.Drawing.Point(12, 218);
+            this.lbMedieLiceu.Location = new System.Drawing.Point(12, 197);
             this.lbMedieLiceu.Name = "lbMedieLiceu";
             this.lbMedieLiceu.Size = new System.Drawing.Size(220, 48);
             this.lbMedieLiceu.TabIndex = 2;
@@ -88,7 +88,7 @@ namespace Admitere_Liceu.Forms
             // lbSpecializare
             // 
             this.lbSpecializare.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSpecializare.Location = new System.Drawing.Point(12, 386);
+            this.lbSpecializare.Location = new System.Drawing.Point(12, 371);
             this.lbSpecializare.Name = "lbSpecializare";
             this.lbSpecializare.Size = new System.Drawing.Size(220, 48);
             this.lbSpecializare.TabIndex = 3;
@@ -105,7 +105,7 @@ namespace Admitere_Liceu.Forms
             // 
             // tbMedieLiceu
             // 
-            this.tbMedieLiceu.Location = new System.Drawing.Point(238, 233);
+            this.tbMedieLiceu.Location = new System.Drawing.Point(238, 212);
             this.tbMedieLiceu.Name = "tbMedieLiceu";
             this.tbMedieLiceu.Size = new System.Drawing.Size(194, 23);
             this.tbMedieLiceu.TabIndex = 5;
@@ -160,6 +160,11 @@ namespace Admitere_Liceu.Forms
             this.columnHeader3.Text = "Specializare";
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader3.Width = 150;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Profil";
+            this.columnHeader4.Width = 150;
             // 
             // label2
             // 
@@ -222,7 +227,7 @@ namespace Admitere_Liceu.Forms
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 302);
+            this.label4.Location = new System.Drawing.Point(12, 287);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(220, 48);
             this.label4.TabIndex = 14;
@@ -233,7 +238,7 @@ namespace Admitere_Liceu.Forms
             // 
             this.comboBoxProfil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxProfil.FormattingEnabled = true;
-            this.comboBoxProfil.Location = new System.Drawing.Point(238, 317);
+            this.comboBoxProfil.Location = new System.Drawing.Point(238, 302);
             this.comboBoxProfil.Name = "comboBoxProfil";
             this.comboBoxProfil.Size = new System.Drawing.Size(194, 25);
             this.comboBoxProfil.TabIndex = 15;
@@ -243,15 +248,10 @@ namespace Admitere_Liceu.Forms
             // 
             this.comboBoxSpecializare.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSpecializare.FormattingEnabled = true;
-            this.comboBoxSpecializare.Location = new System.Drawing.Point(238, 401);
+            this.comboBoxSpecializare.Location = new System.Drawing.Point(238, 386);
             this.comboBoxSpecializare.Name = "comboBoxSpecializare";
             this.comboBoxSpecializare.Size = new System.Drawing.Size(194, 25);
             this.comboBoxSpecializare.TabIndex = 16;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Profil";
-            this.columnHeader4.Width = 150;
             // 
             // LiceuForm
             // 

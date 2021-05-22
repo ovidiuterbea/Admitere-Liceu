@@ -1,0 +1,1 @@
+[{"ID":0,"Nume":"test","Prenume":"test","CNP":"5000500500500","Adresa":"wefsdfsd","Sex":"M","MediePeScGenerala":10.0,"Examen":{"ID":6,"NotaMatematica":10.0,"NotaRomana":10.0},"Licee":[{"NumeLiceu":"Colegiul National Sfantul Sava","MedieLiceu":9.8,"Specializare":"Matematica-Informatica","Profil":"Real"}],"ZiDeNastere":"2000-06-14T13:32:46","MedieFinalaForSQL":0.0}]

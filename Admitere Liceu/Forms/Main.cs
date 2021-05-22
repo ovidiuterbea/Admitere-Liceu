@@ -19,7 +19,6 @@ namespace Admitere_Liceu
         public Elev _elevMain;
         public Examen _examenMain;
         public List<Elev> _elevi;
-        private string connectionString = "Data Source=database.db";
         public Main()
         {
             InitializeComponent();
@@ -109,6 +108,7 @@ namespace Admitere_Liceu
             vizualizareElevi.ShowDialog();
         }
 
+        // accelerator
         private void Main_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.Control && e.KeyCode.ToString()=="O")
@@ -148,7 +148,7 @@ namespace Admitere_Liceu
        
 
         
-
+        // print doc
         private void btnPrint_Click(object sender, EventArgs e)
         {
             if(printDialog.ShowDialog() == DialogResult.OK)

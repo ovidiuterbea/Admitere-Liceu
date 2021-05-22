@@ -34,7 +34,7 @@ namespace Admitere_Liceu.Clase
     {
         public bool Equals(Liceu x, Liceu y)
         {
-            // Two items are equal if their keys are equal.
+            
             return x.NumeLiceu == y.NumeLiceu;
         }
 
