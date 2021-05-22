@@ -22,13 +22,33 @@ namespace Admitere_Liceu.Forms
 
         private void VizualizareElevi_Load(object sender, EventArgs e)
         {
-            dgvElevi.DataSource = elevi;
+            //dgvElevi.DataSource = elevi;
+            DisplayElevi();
+        }
+        public void DisplayElevi()
+        {
+            dgvElevi.Rows.Clear();
+
+            foreach (Elev elev in elevi)
+            {
+
+
+
+                int rowIndex = dgvElevi.Rows.Add(new object[]
+                {
+                    elev.Nume,
+                    elev.Prenume,
+                    elev.medieElev()
+                });
+
+                dgvElevi.Rows[rowIndex].Tag = elev;
+            }
         }
 
         private void dgvElevi_DoubleClick(object sender, EventArgs e)
         {
             DataGridViewRow row = dgvElevi.SelectedRows[0];
-            Elev elev = (Elev)row.DataBoundItem;
+            Elev elev = (Elev)row.Tag;
             Liceu liceuAdmis = new Liceu();
             
             List<Liceu> sortedLicee = elev.Licee.OrderBy(o => o.MedieLiceu).ToList();

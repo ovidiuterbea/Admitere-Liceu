@@ -43,14 +43,14 @@ namespace Admitere_Liceu
             this.serializareToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.deserializareToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnInscriere = new System.Windows.Forms.Button();
-            this.label_Welcome = new System.Windows.Forms.Label();
-            this.btnVisualizeElevi = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.printPagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPrint = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPrintPreview = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPageSetup = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnInscriere = new System.Windows.Forms.Button();
+            this.label_Welcome = new System.Windows.Forms.Label();
+            this.btnVisualizeElevi = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.printDialog = new System.Windows.Forms.PrintDialog();
@@ -164,6 +164,37 @@ namespace Admitere_Liceu
             this.exportToolStripMenuItem.Text = "Export";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
+            // printPagesToolStripMenuItem
+            // 
+            this.printPagesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnPrint,
+            this.btnPrintPreview,
+            this.btnPageSetup});
+            this.printPagesToolStripMenuItem.Name = "printPagesToolStripMenuItem";
+            this.printPagesToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
+            this.printPagesToolStripMenuItem.Text = "Print pages";
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(177, 26);
+            this.btnPrint.Text = "Print";
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // btnPrintPreview
+            // 
+            this.btnPrintPreview.Name = "btnPrintPreview";
+            this.btnPrintPreview.Size = new System.Drawing.Size(177, 26);
+            this.btnPrintPreview.Text = "Print Preview";
+            this.btnPrintPreview.Click += new System.EventHandler(this.btnPrintPreview_Click);
+            // 
+            // btnPageSetup
+            // 
+            this.btnPageSetup.Name = "btnPageSetup";
+            this.btnPageSetup.Size = new System.Drawing.Size(177, 26);
+            this.btnPageSetup.Text = "Page Setup";
+            this.btnPageSetup.Click += new System.EventHandler(this.btnPageSetup_Click);
+            // 
             // btnInscriere
             // 
             this.btnInscriere.DialogResult = System.Windows.Forms.DialogResult.OK;
@@ -193,7 +224,7 @@ namespace Admitere_Liceu
             this.btnVisualizeElevi.Name = "btnVisualizeElevi";
             this.btnVisualizeElevi.Size = new System.Drawing.Size(119, 71);
             this.btnVisualizeElevi.TabIndex = 3;
-            this.btnVisualizeElevi.Text = "Vizualizare elevi (Data binding)";
+            this.btnVisualizeElevi.Text = "Vizualizare elevi (GridView)";
             this.btnVisualizeElevi.UseVisualStyleBackColor = true;
             this.btnVisualizeElevi.Click += new System.EventHandler(this.btnVisualizeElevi_Click);
             // 
@@ -207,37 +238,6 @@ namespace Admitere_Liceu
             this.button1.Text = "Vizualizare elevi (SQLite)";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // printPagesToolStripMenuItem
-            // 
-            this.printPagesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnPrint,
-            this.btnPrintPreview,
-            this.btnPageSetup});
-            this.printPagesToolStripMenuItem.Name = "printPagesToolStripMenuItem";
-            this.printPagesToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
-            this.printPagesToolStripMenuItem.Text = "Print pages";
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(224, 26);
-            this.btnPrint.Text = "Print";
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
-            // 
-            // btnPrintPreview
-            // 
-            this.btnPrintPreview.Name = "btnPrintPreview";
-            this.btnPrintPreview.Size = new System.Drawing.Size(224, 26);
-            this.btnPrintPreview.Text = "Print Preview";
-            this.btnPrintPreview.Click += new System.EventHandler(this.btnPrintPreview_Click);
-            // 
-            // btnPageSetup
-            // 
-            this.btnPageSetup.Name = "btnPageSetup";
-            this.btnPageSetup.Size = new System.Drawing.Size(224, 26);
-            this.btnPageSetup.Text = "Page Setup";
-            this.btnPageSetup.Click += new System.EventHandler(this.btnPageSetup_Click);
             // 
             // printDocument
             // 
