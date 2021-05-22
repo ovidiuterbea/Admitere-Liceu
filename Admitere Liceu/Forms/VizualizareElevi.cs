@@ -22,7 +22,6 @@ namespace Admitere_Liceu.Forms
 
         private void VizualizareElevi_Load(object sender, EventArgs e)
         {
-            //dgvElevi.DataSource = elevi;
             DisplayElevi();
         }
         public void DisplayElevi()
@@ -31,14 +30,33 @@ namespace Admitere_Liceu.Forms
 
             foreach (Elev elev in elevi)
             {
+                string numeLiceu;
+                Liceu liceuAdmis = new Liceu();
 
+                List<Liceu> sortedLicee = elev.Licee.OrderBy(o => o.MedieLiceu).ToList();
 
+                foreach (Liceu liceu in sortedLicee)
+                {
+
+                    if (elev.medieElev() > liceu.MedieLiceu)
+                    {
+                        liceuAdmis = liceu;
+
+                    }
+                }
+
+                if (liceuAdmis.NumeLiceu == null)
+                    numeLiceu = "---------";
+                else
+                    numeLiceu = liceuAdmis.NumeLiceu;
+                
 
                 int rowIndex = dgvElevi.Rows.Add(new object[]
                 {
                     elev.Nume,
                     elev.Prenume,
-                    elev.medieElev()
+                    elev.medieElev(),
+                    numeLiceu
                 });
 
                 dgvElevi.Rows[rowIndex].Tag = elev;
@@ -52,10 +70,10 @@ namespace Admitere_Liceu.Forms
             Liceu liceuAdmis = new Liceu();
             
             List<Liceu> sortedLicee = elev.Licee.OrderBy(o => o.MedieLiceu).ToList();
-            //int contor = 0;
+            
             foreach (Liceu liceu in sortedLicee)
             {
-                //contor++;
+                
                 if (elev.medieElev() > liceu.MedieLiceu)
                 {
                     liceuAdmis = liceu;
@@ -66,7 +84,7 @@ namespace Admitere_Liceu.Forms
             {
                 MessageBox.Show("Din pacate elevul/eleva cu numele " + elev.Nume + " " + elev.Prenume + " nu a trecut examenul de bacalaureat.");
             }
-            else if (/*contor == sortedLicee.Count  &&*/ liceuAdmis.NumeLiceu == null)
+            else if (liceuAdmis.NumeLiceu == null)
             {
                 MessageBox.Show("Din pacate elevul cu numele " + elev.Nume + " " + elev.Prenume + " nu a fost admis/admisa la niciun liceu din cele alese. Elevul va fi repartizat aleator.");
             }
