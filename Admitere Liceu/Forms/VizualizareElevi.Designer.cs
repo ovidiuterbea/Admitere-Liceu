@@ -103,6 +103,7 @@ namespace Admitere_Liceu.Forms
             this.Controls.Add(this.dgvElevi);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "VizualizareElevi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VizualizareElevi";
             this.Load += new System.EventHandler(this.VizualizareElevi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvElevi)).EndInit();
