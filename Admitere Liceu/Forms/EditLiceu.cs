@@ -266,5 +266,15 @@ namespace Admitere_Liceu.Forms
                 comboBoxSpecializare.Items.Add("Militar");
             }
         }
+
+        private void tbNumeLiceu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space));
+        }
+
+        private void tbMedieLiceu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar);
+        }
     }
 }

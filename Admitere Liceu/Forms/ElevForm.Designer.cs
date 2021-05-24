@@ -40,7 +40,6 @@ namespace Admitere_Liceu.Forms
             this.tbNumeElev = new System.Windows.Forms.TextBox();
             this.tbPrenumeElev = new System.Windows.Forms.TextBox();
             this.tbAdresaElev = new System.Windows.Forms.TextBox();
-            this.tbSexElev = new System.Windows.Forms.TextBox();
             this.tbMedieSc = new System.Windows.Forms.TextBox();
             this.tbCNP = new System.Windows.Forms.TextBox();
             this.tbDataNasterii = new System.Windows.Forms.DateTimePicker();
@@ -48,6 +47,7 @@ namespace Admitere_Liceu.Forms
             this.btnEditElev = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.comboBoxSex = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,13 +141,6 @@ namespace Admitere_Liceu.Forms
             this.tbAdresaElev.Size = new System.Drawing.Size(155, 28);
             this.tbAdresaElev.TabIndex = 9;
             // 
-            // tbSexElev
-            // 
-            this.tbSexElev.Location = new System.Drawing.Point(569, 128);
-            this.tbSexElev.Name = "tbSexElev";
-            this.tbSexElev.Size = new System.Drawing.Size(105, 28);
-            this.tbSexElev.TabIndex = 10;
-            // 
             // tbMedieSc
             // 
             this.tbMedieSc.Location = new System.Drawing.Point(569, 185);
@@ -215,19 +208,28 @@ namespace Admitere_Liceu.Forms
             // 
             this.errorProvider.ContainerControl = this;
             // 
+            // comboBoxSex
+            // 
+            this.comboBoxSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSex.FormattingEnabled = true;
+            this.comboBoxSex.Location = new System.Drawing.Point(569, 128);
+            this.comboBoxSex.Name = "comboBoxSex";
+            this.comboBoxSex.Size = new System.Drawing.Size(105, 29);
+            this.comboBoxSex.TabIndex = 17;
+            // 
             // ElevForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(730, 479);
+            this.Controls.Add(this.comboBoxSex);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnEditElev);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tbDataNasterii);
             this.Controls.Add(this.tbCNP);
             this.Controls.Add(this.tbMedieSc);
-            this.Controls.Add(this.tbSexElev);
             this.Controls.Add(this.tbAdresaElev);
             this.Controls.Add(this.tbPrenumeElev);
             this.Controls.Add(this.tbNumeElev);
@@ -244,6 +246,7 @@ namespace Admitere_Liceu.Forms
             this.Name = "ElevForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Elev Form";
+            this.Load += new System.EventHandler(this.ElevForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -262,7 +265,6 @@ namespace Admitere_Liceu.Forms
         private System.Windows.Forms.TextBox tbNumeElev;
         private System.Windows.Forms.TextBox tbPrenumeElev;
         private System.Windows.Forms.TextBox tbAdresaElev;
-        private System.Windows.Forms.TextBox tbSexElev;
         private System.Windows.Forms.TextBox tbMedieSc;
         private System.Windows.Forms.TextBox tbCNP;
         private System.Windows.Forms.DateTimePicker tbDataNasterii;
@@ -270,5 +272,6 @@ namespace Admitere_Liceu.Forms
         private System.Windows.Forms.Button btnEditElev;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.ErrorProvider errorProvider;
+        private System.Windows.Forms.ComboBox comboBoxSex;
     }
 }

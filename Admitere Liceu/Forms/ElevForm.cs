@@ -55,7 +55,7 @@ namespace Admitere_Liceu.Forms
             string numeElev = tbNumeElev.Text;
             string prenumeElev = tbPrenumeElev.Text;
             string adresaElev = tbAdresaElev.Text;
-            string sexElev = tbSexElev.Text;
+            string sexElev = comboBoxSex.Text;
             float medieScElev = float.Parse(tbMedieSc.Text);
             DateTime dataNasterii = tbDataNasterii.Value;
             string cnpElev = tbCNP.Text;
@@ -76,7 +76,7 @@ namespace Admitere_Liceu.Forms
             tbDataNasterii.Value = eEl1.elev.ZiDeNastere;
             tbNumeElev.Text = eEl1.elev.Nume;
             tbPrenumeElev.Text = eEl1.elev.Prenume;
-            tbSexElev.Text = eEl1.elev.Sex;
+            comboBoxSex.Text = eEl1.elev.Sex;
             tbMedieSc.Text = eEl1.elev.MediePeScGenerala.ToString();
         }
 
@@ -162,6 +162,12 @@ namespace Admitere_Liceu.Forms
         private void tbCNP_Validated(object sender, EventArgs e)
         {
             errorProvider.SetError(tbCNP, null);
+        }
+
+        private void ElevForm_Load(object sender, EventArgs e)
+        {
+            comboBoxSex.Items.Add("Masculin");
+            comboBoxSex.Items.Add("Feminin");
         }
     }
 }

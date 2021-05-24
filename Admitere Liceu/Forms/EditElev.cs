@@ -29,18 +29,21 @@ namespace Admitere_Liceu.Forms
             elev.Prenume = tbPrenumeElev.Text;
             elev.ZiDeNastere = tbDataNasterii.Value;
             elev.MediePeScGenerala = float.Parse(tbMedieSc.Text);
-            elev.Sex = tbSexElev.Text;
+            elev.Sex = comboBoxSex.Text;
         }
 
         private void EditElev_Load(object sender, EventArgs e)
         {
+            comboBoxSex.Items.Add("Masculin");
+            comboBoxSex.Items.Add("Feminin");
+
             tbAdresaElev.Text = elev.Adresa;
             tbCNP.Text = elev.CNP;
             tbDataNasterii.Value = elev.ZiDeNastere;
             tbMedieSc.Text = elev.MediePeScGenerala.ToString();
             tbNumeElev.Text = elev.Nume;
             tbPrenumeElev.Text = elev.Prenume;
-            tbSexElev.Text = elev.Sex;
+            comboBoxSex.Text = elev.Sex;
         }
 
         private void tbNumeElev_Validating(object sender, CancelEventArgs e)

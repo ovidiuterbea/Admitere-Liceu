@@ -34,7 +34,6 @@ namespace Admitere_Liceu.Forms
             this.tbDataNasterii = new System.Windows.Forms.DateTimePicker();
             this.tbCNP = new System.Windows.Forms.TextBox();
             this.tbMedieSc = new System.Windows.Forms.TextBox();
-            this.tbSexElev = new System.Windows.Forms.TextBox();
             this.tbAdresaElev = new System.Windows.Forms.TextBox();
             this.tbPrenumeElev = new System.Windows.Forms.TextBox();
             this.tbNumeElev = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@ namespace Admitere_Liceu.Forms
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.comboBoxSex = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,13 +86,6 @@ namespace Admitere_Liceu.Forms
             this.tbMedieSc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbMedieSc_KeyPress);
             this.tbMedieSc.Validating += new System.ComponentModel.CancelEventHandler(this.tbMedieSc_Validating);
             this.tbMedieSc.Validated += new System.EventHandler(this.tbMedieSc_Validated);
-            // 
-            // tbSexElev
-            // 
-            this.tbSexElev.Location = new System.Drawing.Point(587, 106);
-            this.tbSexElev.Name = "tbSexElev";
-            this.tbSexElev.Size = new System.Drawing.Size(105, 23);
-            this.tbSexElev.TabIndex = 24;
             // 
             // tbAdresaElev
             // 
@@ -202,19 +195,28 @@ namespace Admitere_Liceu.Forms
             // 
             this.errorProvider.ContainerControl = this;
             // 
+            // comboBoxSex
+            // 
+            this.comboBoxSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSex.FormattingEnabled = true;
+            this.comboBoxSex.Location = new System.Drawing.Point(587, 106);
+            this.comboBoxSex.Name = "comboBoxSex";
+            this.comboBoxSex.Size = new System.Drawing.Size(105, 25);
+            this.comboBoxSex.TabIndex = 31;
+            // 
             // EditElev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(778, 478);
+            this.Controls.Add(this.comboBoxSex);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tbDataNasterii);
             this.Controls.Add(this.tbCNP);
             this.Controls.Add(this.tbMedieSc);
-            this.Controls.Add(this.tbSexElev);
             this.Controls.Add(this.tbAdresaElev);
             this.Controls.Add(this.tbPrenumeElev);
             this.Controls.Add(this.tbNumeElev);
@@ -241,7 +243,6 @@ namespace Admitere_Liceu.Forms
         private System.Windows.Forms.DateTimePicker tbDataNasterii;
         private System.Windows.Forms.TextBox tbCNP;
         private System.Windows.Forms.TextBox tbMedieSc;
-        private System.Windows.Forms.TextBox tbSexElev;
         private System.Windows.Forms.TextBox tbAdresaElev;
         private System.Windows.Forms.TextBox tbPrenumeElev;
         private System.Windows.Forms.TextBox tbNumeElev;
@@ -254,5 +255,6 @@ namespace Admitere_Liceu.Forms
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.ErrorProvider errorProvider;
+        private System.Windows.Forms.ComboBox comboBoxSex;
     }
 }

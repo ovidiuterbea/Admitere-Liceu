@@ -80,6 +80,7 @@ namespace Admitere_Liceu.Forms
             this.tbNumeLiceu.Name = "tbNumeLiceu";
             this.tbNumeLiceu.Size = new System.Drawing.Size(190, 22);
             this.tbNumeLiceu.TabIndex = 3;
+            this.tbNumeLiceu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNumeLiceu_KeyPress);
             // 
             // tbMedieLiceu
             // 
@@ -87,6 +88,7 @@ namespace Admitere_Liceu.Forms
             this.tbMedieLiceu.Name = "tbMedieLiceu";
             this.tbMedieLiceu.Size = new System.Drawing.Size(190, 22);
             this.tbMedieLiceu.TabIndex = 4;
+            this.tbMedieLiceu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbMedieLiceu_KeyPress);
             // 
             // btnOk
             // 

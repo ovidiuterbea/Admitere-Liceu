@@ -68,7 +68,7 @@ namespace Admitere_Liceu
             this.printPagesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(937, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(649, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -198,9 +198,9 @@ namespace Admitere_Liceu
             // btnInscriere
             // 
             this.btnInscriere.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnInscriere.Location = new System.Drawing.Point(50, 394);
+            this.btnInscriere.Location = new System.Drawing.Point(0, 121);
             this.btnInscriere.Name = "btnInscriere";
-            this.btnInscriere.Size = new System.Drawing.Size(119, 71);
+            this.btnInscriere.Size = new System.Drawing.Size(649, 71);
             this.btnInscriere.TabIndex = 1;
             this.btnInscriere.Text = "Adaugare Elev";
             this.btnInscriere.UseVisualStyleBackColor = true;
@@ -210,7 +210,7 @@ namespace Admitere_Liceu
             // 
             this.label_Welcome.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Welcome.ForeColor = System.Drawing.Color.Transparent;
-            this.label_Welcome.Location = new System.Drawing.Point(277, 28);
+            this.label_Welcome.Location = new System.Drawing.Point(133, 28);
             this.label_Welcome.Name = "label_Welcome";
             this.label_Welcome.Size = new System.Drawing.Size(379, 71);
             this.label_Welcome.TabIndex = 2;
@@ -220,9 +220,9 @@ namespace Admitere_Liceu
             // btnVisualizeElevi
             // 
             this.btnVisualizeElevi.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnVisualizeElevi.Location = new System.Drawing.Point(767, 394);
+            this.btnVisualizeElevi.Location = new System.Drawing.Point(0, 301);
             this.btnVisualizeElevi.Name = "btnVisualizeElevi";
-            this.btnVisualizeElevi.Size = new System.Drawing.Size(119, 71);
+            this.btnVisualizeElevi.Size = new System.Drawing.Size(649, 71);
             this.btnVisualizeElevi.TabIndex = 3;
             this.btnVisualizeElevi.Text = "Vizualizare elevi (GridView)";
             this.btnVisualizeElevi.UseVisualStyleBackColor = true;
@@ -231,9 +231,9 @@ namespace Admitere_Liceu
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(406, 394);
+            this.button1.Location = new System.Drawing.Point(0, 211);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 71);
+            this.button1.Size = new System.Drawing.Size(649, 71);
             this.button1.TabIndex = 4;
             this.button1.Text = "Vizualizare elevi (SQLite)";
             this.button1.UseVisualStyleBackColor = true;
@@ -269,7 +269,7 @@ namespace Admitere_Liceu
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(937, 477);
+            this.ClientSize = new System.Drawing.Size(649, 449);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVisualizeElevi);
             this.Controls.Add(this.label_Welcome);
