@@ -80,11 +80,8 @@ namespace Admitere_Liceu.Forms
                     
                 }
             }
-            if(elev.medieElev() < 6 || elev.Examen.NotaMatematica < 5 || elev.Examen.NotaRomana < 5)
-            {
-                MessageBox.Show("Din pacate elevul/eleva cu numele " + elev.Nume + " " + elev.Prenume + " nu a trecut examenul de bacalaureat.");
-            }
-            else if (liceuAdmis.NumeLiceu == null)
+            
+            if (liceuAdmis.NumeLiceu == null)
             {
                 MessageBox.Show("Din pacate elevul cu numele " + elev.Nume + " " + elev.Prenume + " nu a fost admis/admisa la niciun liceu din cele alese. Elevul va fi repartizat aleator.");
             }
